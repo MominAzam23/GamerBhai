@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Step 2 - Access Content</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, white, silver);
+      color: #000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .ad-top {
+      width: 100%;
+      height: 60px;
+      background-color: #f0f0f0;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d81b60;
+    }
+
+    .rich-ad {
+      width: 90%;
+      max-width: 500px;
+      height: 250px;
+      margin: 15px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rich-ad img {
+      max-width: 200px;
+      margin-bottom: 8px;
+    }
+
+    .rich-ad p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .sticky-footer-ad {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 12px 16px;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      z-index: 999;
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+
+    .sticky-footer-ad img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #e91e63;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Style for the gameplay video section */
+    .gameplay-video {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gameplay-video h2 {
+      font-size: 22px;
+      color: #000;
+    }
+
+    .gameplay-video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .gameplay-video-container a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .gameplay-video-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gameplay-video-container .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translate(-50%, -50%);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad-top">Top Banner Ad</div>
+
+  <div class="rich-ad">
+    <img src="https://via.placeholder.com/200" alt="Ad" />
+    <p>Don't Miss These Deals!</p>
+  </div>
+
+  <h1>Final Step to Access 🎉</h1>
+  <p>Click below to unlock the final content</p>
+
+  <button class="btn" onclick="finalRedirect()">Open Link</button>
+
+  <div class="rich-ad">
+    <img src="https://via.placeholder.com/200" alt="Ad" />
+    <p>Fresh Offers Just for You!</p>
+  </div>
+
+  <div class="sticky-footer-ad">Learn More</div>
+
+  <div class="gameplay-video">
+    <h2 style="font-size: 22px; color: #000;">🎮 Watch My Gameplay</h2>
+    <div class="gameplay-video-container">
+      <a href="https://youtu.be/WZ2XGv6goXM?si=koeqpuoQF-9erlHb" target="_blank" style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <img src="https://img.youtube.com/vi/WZ2XGv6goXM/maxresdefault.jpg" alt="Gameplay Video">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Play_Icon.png" alt="Play Button" class="play-button">
+      </a>
+    </div>
+    <p style="margin-top: 10px; font-size: 14px; color: #555; text-align: justify; padding-left: 20px; padding-right: 20px;">
+      The gaming industry has grown far beyond a source of entertainment—it has transformed into a cultural, economic, and technological powerhouse. With billions of players across the globe and an ever-expanding audience, gaming today is not just about playing; it’s about building careers, connecting with communities, and staying at the cutting edge of digital innovation.
+      <br><br>
+      In recent years, gaming has taken massive leaps forward thanks to advancements in graphics, artificial intelligence, and virtual reality. Whether it’s the realistic open-world experience in AAA titles or the fast-paced action in multiplayer games, the industry has something for everyone. Popular franchises like Call of Duty, GTA, Fortnite, PUBG, and Valorant have built global fanbases, and now even indie games are making a major impact.
+      <br><br>
+      But gaming isn't just about playing anymore—it's about creating. Content creators are using platforms like YouTube, Twitch, and Facebook Gaming to share their gameplay, build audiences, and earn a living. Many gamers have turned their passion into a full-time career, whether through streaming, esports tournaments, or collaborations with gaming brands.
+      <br><br>
+      Another exciting trend is the rise of mobile gaming. With smartphones becoming more powerful, games like BGMI, Free Fire, and Call of Duty Mobile have gained massive popularity, especially in countries like India. Mobile gaming has made gaming accessible to millions, leading to new opportunities for both players and developers.
+      <br><br>
+      The esports industry has exploded, turning skilled gamers into international stars. Tournaments now offer prize pools worth millions, and professional esports players are treated like celebrities. From casual gamers to elite pros, everyone has a chance to rise through the ranks.
+      <br><br>
+      One of the biggest strengths of gaming is community. Discord servers, Reddit forums, in-game chats—all help gamers find like-minded people, form squads, and build friendships that last beyond the screen. It’s a place where creativity, competition, and connection come together.
+      <br><br>
+      As we move into the future, gaming will only get bigger and better. With new technologies like cloud gaming, the metaverse, and AI-driven storytelling, the line between the real and virtual world is getting thinner every day.
+    </p>
+  </div>
+
+  <script>
+    function finalRedirect() {
+      if (!sessionStorage.getItem("secondAdOpened")) {
+        // First time: open ad
+        window.open("https://example-ad.com", "_blank"); // ✅ Replace with your ad link
+        sessionStorage.setItem("secondAdOpened", "true");
+      } else {
+        // Second time: redirect to Telegram (or final destination)
+        window.location.href = "https://t.me/+2JZudsw13mtkYjMy"; // ✅ Replace with your Telegram link
+      }
+    }
+  </script>
+
+  <div style="margin-top: 40px; text-align: center;">
+    <a href="About.html" style="margin: 8px; padding: 10px 20px; background-color: #555; color: white; border-radius: 8px; text-decoration: none; display: inline-block;">About Us</a>
+    <a href="Privacypolicy.html" style="margin: 8px; padding: 10px 20px; background-color: #555; color: white; border-radius: 8px; text-decoration: none; display: inline-block;">Privacy Policy</a>
+    <a href="T&C.html" style="margin: 8px; padding: 10px 20px; background-color: #555; color: white; border-radius: 8px; text-decoration: none; display: inline-block;">Terms & Conditions</a>
+  </div>
+
+</body>
+</html>
