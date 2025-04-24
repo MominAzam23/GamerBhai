@@ -197,6 +197,33 @@
       transform: translate(-50%, -50%);
       opacity: 0.9;
     }
+
+    /* Style for the side-by-side images */
+    .side-by-side-images {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; /* Center the images horizontally */
+      align-items: center; /* Align items vertically */
+    }
+
+    .side-by-side-images img {
+      width: 45%; /* Adjust as needed */
+      max-width: 300px; /* Maximum width for each image */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      margin: 0 10px; /* Add some horizontal spacing between images */
+    }
+
+    /* Style for the description after the images */
+    .image-description {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #050303;
+      text-align: justify;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   </style>
 </head>
 <body>
@@ -257,6 +284,28 @@
       As we move into the future, gaming will only get bigger and better. With new technologies like cloud gaming, the metaverse, and AI-driven storytelling, the line between the real and virtual world is getting thinner every day.
     </p>
   </div>
+
+  <!-- Side-by-side images section -->
+  <div class="side-by-side-images">
+    <img src="bmw11.jpg" alt="Image 1">
+    <img src="bmw22.jpg" alt="Image 2">
+  </div>
+
+  <!-- Description after the images -->
+  <p class="image-description">
+    The BMW M4 is a high-performance sports coupe known for its powerful engine, aggressive styling, and advanced technology. It's available in both a standard M4 model and the more potent M4 Competition variant. The M4 features a twin-turbocharged inline-six engine, delivering impressive acceleration and handling.
+  </p>
+
+   <!-- Side-by-side images section -->
+   <div class="side-by-side-images">
+    <img src="amg11.jpg" alt="Image 1">
+    <img src="amg22.jpg" alt="Image 2">
+  </div>
+
+  <!-- Description after the images -->
+  <p class="image-description">
+  The Mercedes-AMG GT is a sports car and coupe known for its high performance and luxury. It's powered by a 4.0-liter twin-turbo V8 engine, offering significant power and torque. The AMG GT comes in various configurations, including 2-door coupes, 4-door coupes, and a track-focused GT Black Series
+  </p>
 
   <script>
     function proceedToNext() {
